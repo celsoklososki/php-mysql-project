@@ -1,0 +1,34 @@
+create database final3015;
+use database final3015;
+
+create table users (
+id bigint primary key auto_increment,
+fname varchar(20),
+lname varchar(20),
+email varchar(60),
+password varchar(60)
+);
+
+create table items (
+id bigint primary key auto_increment,
+email varchar(60),
+title varchar(20),
+price varchar(20),
+description varchar(150),
+picture varchar(60),
+pin varchar(30),
+downvote bigint
+);
+
+create table recent_view (
+id bigint primary key auto_increment,
+email varchar(60),
+title varchar(20),
+price varchar(20),
+description varchar(150),
+picture varchar(60),
+fname varchar(20),
+lname varchar(20),
+product_id bigint,
+downvote bigint
+);
